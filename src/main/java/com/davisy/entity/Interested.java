@@ -40,5 +40,5 @@ public class Interested {
 	Post post;
 
 	@Temporal(TemporalType.TIMESTAMP)
-	Calendar date_interested = GregorianCalendar.getInstance();
+	Calendar date_interested;
 }
