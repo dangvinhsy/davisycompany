@@ -47,7 +47,7 @@ public class Post {
 	String content;
 
 	@Temporal(TemporalType.TIMESTAMP)
-	Calendar date_Post = GregorianCalendar.getInstance();
+	Calendar date_Post;
 
 	String hash_Tag;
 
