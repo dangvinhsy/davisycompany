@@ -30,7 +30,7 @@ public class Chats {
 	int id;
 	String name_chats;
 	@Temporal(TemporalType.TIMESTAMP)
-	Calendar day_create = GregorianCalendar.getInstance();
+	Calendar day_create;
 
 	@JsonIgnore
 	@OneToMany(mappedBy = "chats")
