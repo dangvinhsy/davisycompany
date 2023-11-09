@@ -40,6 +40,6 @@ public class SendReciever {
 	@JoinColumn(name = "post_id")
 	Post post;
 
-	@Temporal(TemporalType.DATE)
-	Calendar date_send_reciever = GregorianCalendar.getInstance();
+	@Temporal(TemporalType.TIMESTAMP)
+	Calendar date_send_reciever ;
 }
