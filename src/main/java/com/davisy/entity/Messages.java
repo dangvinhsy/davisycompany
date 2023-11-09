@@ -30,7 +30,7 @@ public class Messages {
 	String content;
 	
 	@Temporal(TemporalType.TIMESTAMP)
-	Calendar send_Time = GregorianCalendar.getInstance();
+	Calendar send_Time;
 
 	@JsonIgnore
 	@ManyToOne
