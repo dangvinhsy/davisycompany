@@ -44,7 +44,7 @@ public class Comment {
 	Post post;
 	
 	@Temporal(TemporalType.TIMESTAMP)
-	Calendar date_comment = GregorianCalendar.getInstance();
+	Calendar date_comment;
 	
 	String content;
 	
