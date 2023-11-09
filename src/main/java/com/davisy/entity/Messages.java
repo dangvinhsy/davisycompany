@@ -2,6 +2,7 @@ package com.davisy.entity;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;
+import java.util.TimeZone;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -28,9 +29,9 @@ public class Messages {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	int id;
 	String content;
-	
+
 	@Temporal(TemporalType.TIMESTAMP)
-	Calendar send_Time;
+	Calendar send_Time = GregorianCalendar.getInstance(TimeZone.getTimeZone("GMT+7"));
 
 	@JsonIgnore
 	@ManyToOne
