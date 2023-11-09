@@ -36,7 +36,7 @@ public class Share {
 	Post post;
 	
 	@Temporal(TemporalType.TIMESTAMP)
-	Calendar date_share = GregorianCalendar.getInstance();
+	Calendar date_share;
 	boolean share_status=true;
 	
 }
