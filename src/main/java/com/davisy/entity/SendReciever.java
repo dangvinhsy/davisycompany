@@ -2,6 +2,7 @@ package com.davisy.entity;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;
+import java.util.TimeZone;
 
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 
@@ -41,5 +42,5 @@ public class SendReciever {
 	Post post;
 
 	@Temporal(TemporalType.TIMESTAMP)
-	Calendar date_send_reciever ;
+	Calendar date_send_reciever = GregorianCalendar.getInstance(TimeZone.getTimeZone("GMT+7"));
 }
